@@ -24,7 +24,7 @@ RoomSchema
   return this.building;
 });
 
-//Virtual for room's capacity
+// Virtual for room's capacity
 RoomSchema
 .virtual('building')
 .get(function () {
