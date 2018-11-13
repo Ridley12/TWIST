@@ -17,7 +17,6 @@ var Topic = require('./models/topic/')
 var Participant = require('./models/participant/')
 var Room = require('./models/room/')
 
-
 var mongoose = require('mongoose');
 var mongoDB = userArgs[0];
 mongoose.connect(mongoDB);
@@ -33,7 +32,7 @@ var topics = []
 var participants = []
 var rooms = []
 
-function highschoolCreate(id, name) {
+function highschoolCreate(high_school_id, name) {
   
 }
 
