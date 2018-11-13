@@ -8,8 +8,8 @@ var PresenterSchema = new Schema(
     family_name: {type: String, required: true, max: 100},
     first_name: {type: String, required: true, max: 100},
     occupation: {type: String, required: true, max: 100},
-    main_phone: {type: String, required: true, max: 11},
-    mobile_phone: {type: String, required: true, max: 11},
+    main_phone: {type: Number, required: true, max: 11},
+    mobile_phone: {type: Number, required: true, max: 11},
     email: {type: String, required: true, max: 100},
   }
 );

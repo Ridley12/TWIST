@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 
 var ScheduleSchema = new Schema(
   {
-    session_number: {type: String, required: true, max: 100},
-    room_number: {type: String, required: true, max: 100},
+    session_number: {type: Number, required: true, max: 100},
+    room_number: {type: Number, required: true, max: 100},
     topic_code: {type: String, required: true, max: 100},
     presenter_id: {type: String, required: true, max: 100},
   }
