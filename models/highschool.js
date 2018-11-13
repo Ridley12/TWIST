@@ -13,7 +13,7 @@ var HighSchoolSchema = new Schema(
 HighSchoolSchema
 .virtual('id')
 .get(function () {
-  return this.family_name + ', ' + this.first_name;
+  return this.id;
 });
 
 // Virtual for high school's name
