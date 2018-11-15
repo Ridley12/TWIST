@@ -34,6 +34,34 @@ var schedule = []
 var session = []
 var topic = []
 
+function highschoolCreate() {
+
+}
+
+function participantCreate() {
+
+}
+
+function presenterCreate() {
+
+}
+
+function roomCreate() {
+
+}
+
+function scheduleCreate() {
+
+}
+
+function sessionCreate() {
+
+}
+
+function topicCreate() {
+
+}
+
 async.event([
     
 ],
