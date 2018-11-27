@@ -6,8 +6,7 @@ console.log('This script populates highschool, participant, presenter, room, sch
 var userArgs = process.argv.slice(2);
 if (!userArgs[0].startsWith('mongodb://')) {
     console.log('ERROR: You need to specify a valid mongodb URL as the first argument');
-    return
-}
+    return}
 
 var async = require('async')
 var Highschool = require('./models/highschool')
@@ -68,12 +67,8 @@ async.event([
 // Optional callback
 function(err, results) {
     if (err) {
-        console.log('FINAL ERR: '+err);
-    }
+        console.log('FINAL ERR: '+err);}
     else {
-        console.log();
-        
-    }
+        console.log();}
     // All done, disconnect from database
-    mongoose.connection.close();
-});
+    mongoose.connection.close();});
