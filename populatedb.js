@@ -10,9 +10,9 @@ if (!userArgs[0].startsWith('mongodb://')) {
 
 var async = require('async')
 var ParticpantSchedule = require('./models/participantschedule')
-var Presenter = require('./models/presenters')
-var Room = require('./models/rooms')
-var Session = require('./models/sessions')
+var Presenters = require('./models/presenters')
+var Rooms = require('./models/rooms')
+var Sessions = require('./models/sessions')
 var Topic = require('./models/topics')
 var SessionSchedule = require('./models/sessionschedule')
 
