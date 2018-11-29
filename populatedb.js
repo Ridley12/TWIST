@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-console.log('This script populates highschool, participant, presenter, room, schedule, session, and topic to your database. Specified database as argument: populatedb mongodb://Wes:locallibrary1986@ds161183.mlab.com:61183/twist-database');
+console.log('This script populates participant schedule, presenters, rooms, sessions, session schedule, and topics to your database. Specified database as argument: populatedb mongodb://Wes:locallibrary1986@ds161183.mlab.com:61183/twist-database');
 
 // Get arguments passed on command line
 var userArgs = process.argv.slice(2);
@@ -9,13 +9,12 @@ if (!userArgs[0].startsWith('mongodb://')) {
     return}
 
 var async = require('async')
-var Highschool = require('./models/highschool')
-var Particpant = require('./models/participant')
-var Presenter = require('./models/presenter')
-var Room = require('./models/Room')
-var Schedule = require('./models/schedule')
-var Session = require('./models/session')
-var Topic = require('./models/topic')
+var ParticpantSchedule = require('./models/participantschedule')
+var Presenter = require('./models/presenters')
+var Room = require('./models/rooms')
+var Session = require('./models/sessions')
+var Topic = require('./models/topics')
+var SessionSchedule = require('./models/sessionschedule')
 
 
 var mongoose = require('mongoose');
@@ -25,39 +24,34 @@ mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-var highschool = []
-var participant = []
-var presenter = []
-var room = []
-var schedule = []
-var session = []
-var topic = []
+var participantSchedule = []
+var presenters = []
+var rooms = []
+var sessions = []
+var topics = []
+var sessionSchedule = []
 
-function highschoolCreate() {
-
-}
-
-function participantCreate() {
+function participantScheduleCreate() {
 
 }
 
-function presenterCreate() {
+function presentersCreate() {
 
 }
 
-function roomCreate() {
+function roomsCreate() {
 
 }
 
-function scheduleCreate() {
+function sessionScheduleCreate() {
 
 }
 
-function sessionCreate() {
+function sessionsCreate() {
 
 }
 
-function topicCreate() {
+function topicsCreate() {
 
 }
 
